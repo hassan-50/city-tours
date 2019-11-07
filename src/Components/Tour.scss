@@ -1,0 +1,49 @@
+@import '../index.scss';
+.tour{
+    width: 16.5rem;
+    background-color: $mainGrey;
+    border-radius: .8rem;
+
+    padding: 1rem 0;
+    img{
+        width: 100%;
+        
+        display: block;
+    }
+}
+.img-container{
+    position: relative;
+}
+.closebtn{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: $mainGreen;
+    font-size: 1.8rem;
+    transition: all 0.3s linear;
+    opacity: 0;
+    cursor: pointer;
+}
+.img-container:hover .closebtn{
+    opacity: 1;
+}
+.info {
+    h3{
+        color: $mainGreen;
+        text-transform: uppercase;
+    }
+    h4{
+        color: $mainGreen;
+        text-transform: capitalize;
+        margin: .2rem 0 0.6rem 0;
+    }
+    h5{
+        text-transform: capitalize;
+        span{
+        color: $mainGreen;
+        font-size: 1.3rem;
+        margin: .5rem;
+        cursor: pointer;
+        }
+    }
+}
